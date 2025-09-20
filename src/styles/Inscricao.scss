@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #012a4a;
+    overflow-x: hidden;
+}
+
+/* Container principal */
+.inscricao {
+    background: linear-gradient(to bottom, rgba(1, 42, 74, 1), rgba(106, 171, 218, 1));
+    display: flex;
+    flex-direction: column; /* Permite rolagem vertical */
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 0 2rem 0;
+    position: relative;
+    overflow: visible; /* garante que elementos absolutos não cortem o conteúdo */
+}
+
+.inscricao__container {
+    position: relative;
+    width: 1280px;
+    max-width: 100%;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.inscricao__bg {
+    position: absolute;
+    inset: 0;
+    background-color: #012a4a;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+/* Cabeçalho */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav .menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav .menu a {
+    font-weight: 600;
+    color: #00296b;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav .menu a:hover {
+    color: #fdc500;
+}
+
+/* Título */
+.inscricao__title {
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.inscricao__subtitle {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/* Elementos decorativos */
+.inscricao__ellipse {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.inscricao__ellipse.yellow {
+    width: 300px;
+    height: 300px;
+    background: #ffe045;
+    top: 150px;
+    left: 5%;
+}
+
+.inscricao__ellipse.blue {
+    width: 250px;
+    height: 250px;
+    background: #69abda;
+    top: 500px;
+    right: 5%;
+}
+
+.inscricao__intersect {
+    position: absolute;
+    top: 200px;
+    left: 5%;
+    width: 300px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.inscricao__image-bg {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 550px;
+    right: 5%;
+    background: linear-gradient(45deg, #69abda, #012a4a);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* Formulário */
+.inscricao__form {
+    position: relative;
+    margin: 0 auto;
+    width: 70%;
+    background: #f2f2f2;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 2;
+}
+
+.inscricao__form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.inscricao__form label span {
+    color: #990202;
+}
+
+.inscricao__form label input,
+.inscricao__form label select {
+    margin-top: 0.3rem;
+    padding: 0.8rem;
+    border: 1px solid #4c4c4c;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.inscricao__btn {
+    background: #fdc500;
+    color: #00296b;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 1rem;
+}
+
+.inscricao__btn:hover {
+    background: #e3b400;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .inscricao__ellipse.yellow,
+    .inscricao__ellipse.blue,
+    .inscricao__intersect,
+    .inscricao__image-bg {
+        display: none;
+    }
+    
+    .inscricao__form {
+        width: 90%;
+    }
+    
+    .inscricao__title {
+        font-size: 2.5rem;
+    }
+    
+    .inscricao__subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav .menu {
+        display: none;
+    }
+    
+    .inscricao__form {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .inscricao__title {
+        font-size: 2rem;
+    }
+    
+    .inscricao__subtitle {
+        font-size: 1.2rem;
+    }
+}

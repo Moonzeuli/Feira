@@ -1,0 +1,327 @@
+/* home.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.homePage {
+  background-color: #ffffff;
+  display: flex;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* container principal */
+.homePage .homeOverlapWrapper {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.homePage .homeOverlap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* fundo gradiente cobrindo a tela */
+.homePage .homeRectangle {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    178deg,
+    rgba(106, 171, 218, 1) 0%,
+    rgba(1, 42, 74, 1) 59%
+  );
+  z-index: 0;
+}
+
+/* imagem da pessoa */
+.homePage .homeMGEditada {
+  position: absolute;
+  width: 45%;
+  height: auto;
+  top: 15%;
+  left: 5%;
+  object-fit: cover;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+/* card amarelo (onde ficam os textos) */
+.homePage .homeCard {
+  position: absolute;
+  width: 30%;
+
+  top: 15%;
+  right: 5%;
+  background-color: #fbe782;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+/* título */
+.homePage .homeTitle {
+  font-family: "Inter-Black", Helvetica;
+  font-weight: 900;
+  color: #00296b;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  z-index: 3;
+}
+
+/* subtítulo */
+.homePage .homeSubtitle {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #00296b;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 3;
+}
+
+/* citação */
+.homePage .homeQuote {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #00296b;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  z-index: 3;
+}
+
+/* botão inscreva-se */
+.homePage .homeBtn {
+  display: inline-block;
+  background-color: rgba(0,41,107);
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.3s ease;
+  z-index: 3;
+}
+.homePage .homeBtn:hover {
+  background-color: #e0ac00;
+}
+
+/* header fixo no topo */
+.homePage .homeNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.homePage .homeNav img {
+  height: 50px;
+  object-fit: contain;
+}
+
+.homePage .homeNav .homeMenu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.homePage .homeNav .homeMenu a {
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.homePage .homeNav .homeMenu a:hover {
+  color: #fdc500;
+}
+
+.homePage .homeOverlapGroupWrapper {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  top: 90%;
+  left: 0px;
+}
+
+.homePage .homeOverlapGroup {
+  position: relative;
+  height: 72px;
+}
+
+.homePage .homeRectangle2 {
+  position: absolute;
+  width: 663px;
+  height: 51px;
+  top: 1px;
+  left: 1px;
+  background-color: #fdc500;
+}
+
+
+.homePage .homeGroup4 {
+  position: absolute;
+  width: 1290px;
+  height: 154px;
+  top: 0;
+  left: 2px;
+}
+
+.homePage .homeOverlap2 {
+  position: relative;
+  width: 1280px;
+  height: 154px;
+}
+
+.homePage .homeRectangle3 {
+  position: absolute;
+  width: 1280px;
+  height: 116px;
+  top: 19px;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.homePage .homeImage {
+  position: absolute;
+  width: 93px;
+  height: 93px;
+  top: 31px;
+  left: 21px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.homePage .homeTextWrapper2 {
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: clamp(18px, 2.5vw, 40px);
+  letter-spacing: 0;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.homePage .homeGroup3 {
+  position: absolute;
+  justify-content: center;
+  width: 90px;
+  height: 15px;
+  left: 340px;
+  gap: 500px;
+}
+
+.homePage .homeTextWrapper3 {
+  position: absolute;
+  top: 62px;
+  left: 166px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homePage .homeTextWrapper4 {
+  position: absolute;
+  top: 62px;
+  left: 331px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homePage .homeTextWrapper5 {
+  position: absolute;
+  top: 62px;
+  left: 527px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homePage .homeTextWrapper6 {
+  position: absolute;
+  top: 62px;
+  left: 748px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homePage .homeTextWrapper7 {
+  position: absolute;
+  top: 62px;
+  left: 927px;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #00296b;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.homePage .homeLogoFrei {
+  position: absolute;
+  width: 146px;
+  height: 154px;
+  top: 0;
+  left: 1133px;
+  aspect-ratio: 0.95;
+  object-fit: cover;
+}
+
+.homePage .homeLogoFrei2 {
+  position: absolute;
+  width: 146px;
+  height: 16px;
+  top: 882px;
+  left: 1135px;
+  aspect-ratio: 0.95;
+  object-fit: cover;
+}
+
+.home-tri{
+  height: 50px;
+  width: 105%;
+  bottom: 250px;
+}

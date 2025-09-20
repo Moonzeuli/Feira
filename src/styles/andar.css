@@ -1,0 +1,313 @@
+:root {
+  --azul-escuro: #0a3b66;
+  --azul: #0b6aa7;
+  --amarelo: #ffeb3b;
+  --branco: #ffffff;
+}
+
+/* 🔗 Navegação */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:6px 32px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  gap: 50px;
+}
+
+.nav .menu {
+  display: flex;
+  gap: 52px;
+}
+
+.nav .menu link {
+  text-decoration: none;
+  color: var(--azul-escuro);
+  font-weight: 600;
+}
+
+/* 🔵 Primeiro Andar com gradiente azul */
+.atracoes-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 9%;
+  background: linear-gradient(to right, var(--azul-escuro), var(--azul));
+}
+
+.coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+  color: var(--branco);
+}
+
+.coluna-esquerda h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.coluna-esquerda img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+ 
+}
+
+.coluna-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 450px;
+}
+
+.coluna-direita img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* 🟨 Caixa amarela */
+.lista-amarela {
+  background-color: var(--amarelo);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.lista-amarela ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-amarela li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a2b4c;
+  padding-bottom: 8px;
+}
+
+/* 🟨 Segundo Andar com fundo amarelo */
+.segundo-andar-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px;
+  background-color: var(--amarelo);
+}
+
+.segundo-coluna-esquerda,
+.segundo-coluna-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+}
+
+.segundo-coluna-direita h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--branco);
+}
+
+.segundo-coluna-direita img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.segundo-andar-layout .lista-amarela {
+  background-color: var(--azul-escuro);
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  min-height: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.destaque-azul {
+  color: var(--azul-escuro);
+}
+
+
+.segundo-andar-layout .lista-amarela li {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--branco);
+  padding-bottom: 8px;
+}
+
+/* 🔵 Terceiro Andar com fundo azul escuro */
+.terceiro-andar-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 60px;
+ background: linear-gradient(to right, var(--azul-escuro), var(--azul));
+}
+
+.terceiro-coluna-esquerda,
+.terceiro-coluna-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 550px;
+}
+
+.terceiro-coluna-esquerda h2 {
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: var(--branco);
+}
+
+/* 🟨 Destaque amarelo no "Terceiro" */
+.destaque-amarelo {
+  color: var(--amarelo);
+}
+
+/* ⚪ Branco para "Atrações" e "Andar" */
+.branco {
+  color: var(--branco);
+}
+
+.terceiro-coluna-esquerda img,
+.terceiro-coluna-direita img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+.terceiro-coluna-direita p,
+.terceiro-coluna-direita ul {
+  color: var(--branco);
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.terceiro-coluna-direita ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+
+/* Faixa amarela lateral */
+.group {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.overlap-group {
+  position: relative;
+  height: 100%;
+}
+
+.div {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fdc500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+/* Polígonos na faixa amarela */
+.polygon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 15px 0;
+  z-index: 4;
+  background-color: transparent;
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 15px 0;
+  z-index: 4;
+  background-color: transparent;
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+}
+
+.polygon-2 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 15px 0;
+  z-index: 4;
+  background-color: transparent;
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+}
+
+.polygon-3 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 15px 0;
+  z-index: 4;
+  background-color: transparent;
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+}
+
+.polygon-4 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 15px 0;
+  z-index: 4;
+  background-color: transparent;
+  transform: rotate(0deg);
+  top: 0;
+  left: 0;
+}
